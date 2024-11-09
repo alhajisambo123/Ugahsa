@@ -8,20 +8,50 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="lama blog" width={50} height={50} />
+          <Image src="/(1).jpeg" alt="lama blog" width={50} height={50} />
           <h1 className={styles.logoText}>UGAHSA BLOG</h1>
         </div>
         <p className={styles.desc}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          necessitatibus similique aspernatur obcaecati veritatis. Aperiam cum
-          porro sequi, totam minima consequuntur, aspernatur deleniti vero
-          repellendus dorales.
+          Welcome to the Ugahsa Blog, your trusted source for insights, stories,
+          and updates from the healthcare community. Our mission is to connect,
+          inform, and inspire practitioners, students, and enthusiasts across
+          all allied health disciplines. Whether you’re here to explore the
+          latest in Occupational Therapy,Medical Laboratory,Respiratory Therapy,
+          Physiotherapy, Dietetics and Radiography, we’re dedicated to bringing
+          valuable information to help you grow in your career and stay
+          informed. Join us as we build a vibrant community of learners and
+          leaders in healthcare. Thank you for being part of UGAHSA!
         </p>
         <div className={styles.icons}>
-          <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/instagram.png" alt="" width={18} height={18} />
-          <Image src="/tiktok.png" alt="" width={18} height={18} />
-          <Image src="/youtube.png" alt="" width={18} height={18} />
+          <Link
+            href="https://web.facebook.com/ugahsa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/facebook.png" alt="Facebook" width={50} height={50} />
+          </Link>
+          <Link
+            href="https://web.facebook.com/ugahsa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/instagram.png" alt="" width={50} height={50} />
+          </Link>
+          <Link
+            href="https://www.youtube.com/@ugahsaofficial281"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/youtube.png" alt="youtube" width={50} height={50} />
+          </Link>
+
+          <Link
+            href="https://www.tiktok.com/@ugahsa_live?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/tiktok.png" alt="" width={50} height={50} />
+          </Link>
         </div>
       </div>
       <div className={styles.links}>
@@ -29,22 +59,24 @@ const Footer = () => {
           <span className={styles.listTitle}>Links</span>
           <Link href="/">Homepage</Link>
           <Link href="/">Blog</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/about">About</Link>
+          {/* <Link href="/">Contact</Link> */}
         </div>
         <div className={styles.list}>
-          <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <span className={styles.listTitle}>Departments</span>
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=OT">OT</Link>
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Physio">Physio</Link>
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Diet">Diet</Link>
         </div>
         <div className={styles.list}>
-          <span className={styles.listTitle}>Social</span>
-          <Link href="/">Facebook</Link>
-          <Link href="/">Instagram</Link>
-          <Link href="/">Tiktok</Link>
-          <Link href="/">Youtube</Link>
+          {/* <span className={styles.listTitle}>Social</span> */}
+          {/* <Link href="/">Facebook</Link>
+          <Link href="/">Instagram</Link> */}
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=RT">RT</Link>
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=MedLab">MedLab</Link>
+          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Radio">Radio</Link>
+
+          {/* <Link href="/">Tiktok</Link> */}
         </div>
       </div>
     </div>

@@ -13,8 +13,8 @@ const AboutPage = () => {
             The University of Ghana Allied Health Students' Association (UGAHSA)
             represents students across various allied health disciplines,
             including Medical Laboratory Science, Physiotherapy, Radiography,
-            Dietetics, Speech Therapy, Dental Therapy, and more. Our mission is
-            to create a supportive environment that nurtures academic
+            Dietetics, Respiratory Therapy and Occupational Therapy. Our mission
+            is to create a supportive environment that nurtures academic
             excellence, leadership, and social responsibility while ensuring the
             welfare of all students.
           </p>

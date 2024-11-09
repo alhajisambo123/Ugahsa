@@ -1,4 +1,4 @@
-.container {
+/* .container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -72,4 +72,170 @@
   color: white;
   cursor: pointer;
   border-radius: 20px;
+} */
+
+/* General Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 100%;
+  padding: 50px;
+  font-size: 64px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.editor {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.textArea {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Toggle Buttons */
+.toggleButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.toggleButtons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.toggleButtons .active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.toggleButtons .inactive {
+  background-color: #f1f1f1;
+  color: #333;
+  border-color: #ddd;
+}
+
+.toggleButtons button:hover {
+  background-color: #ddd;
+}
+
+/* File Upload & Media */
+.addButton {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#fileInput {
+  display: none;
+}
+
+/* Progress Bar */
+.progressBar {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 6px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 3px;
+}
+
+/* Publish Button */
+.publish {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.publish:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.publish:hover {
+  background-color: #45a049;
+}
+
+/* Loading State */
+.loading {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .input,
+  .select,
+  .textArea,
+  .publish {
+    width: 100%;
+  }
+
+  .toggleButtons {
+    flex-direction: column;
+  }
+
+  .toggleButtons button {
+    margin-bottom: 10px;
+  }
+
+  .addButton {
+    width: 100%;
+    text-align: center;
+  }
 }

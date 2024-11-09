@@ -1,6 +1,7 @@
 import CardList from "@/components/cardList/CardList";
 import styles from "./blogPage.module.css";
 import Menu from "@/components/Menu/Menu";
+import CardList1 from "@/components/activityList/CardList";
 
 const BlogPage = ({ searchParams }) => {
   const page = parseInt(searchParams.page) || 1;
@@ -12,6 +13,7 @@ const BlogPage = ({ searchParams }) => {
       <div className={styles.content}>
         <CardList page={page} cat={cat} />
         <Menu />
+        <CardList1 page={page} cat={cat} />
       </div>
     </div>
   );

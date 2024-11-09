@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./cardList.module.css";
 import Pagination from "../pagination/Pagination";
 import Image from "next/image";
-import Card from "../card/Card";
+import Card1 from "../activity/Card";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-    `https://blog-one-blue-53.vercel.app/api/posts?page=${page}&cat=${
+    `https://blog-one-blue-53.vercel.app/api/activitys?page=${page}&cat=${
       cat || ""
     }`,
     {
@@ -21,7 +21,7 @@ const getData = async (page, cat) => {
   return res.json();
 };
 
-const CardList = async ({ page, cat }) => {
+const CardList1 = async ({ page, cat }) => {
   const { posts, count } = await getData(page, cat);
 
   const POST_PER_PAGE = 3;
@@ -34,7 +34,7 @@ const CardList = async ({ page, cat }) => {
       <h1 className={styles.title}>Recent Posts</h1>
       <div className={styles.posts}>
         {posts?.map((item) => (
-          <Card item={item} key={item._id} />
+          <Card1 item={item} key={item._id} />
         ))}
       </div>
       <Pagination page={page} hasPrev={hasPrev} hasNext={hasNext} />
@@ -42,4 +42,4 @@ const CardList = async ({ page, cat }) => {
   );
 };
 
-export default CardList;
+export default CardList1;
