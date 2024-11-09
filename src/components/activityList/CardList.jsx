@@ -6,7 +6,7 @@ import Card1 from "../activity/Card";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-    `https://blog-one-blue-53.vercel.app/api/activitys?page=${page}&cat=${
+    `https://ugahsa.vercel.app/api/activitys?page=${page}&cat=${
       cat || ""
     }`,
     {
