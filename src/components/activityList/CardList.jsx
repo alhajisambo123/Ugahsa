@@ -6,13 +6,7 @@ import Card1 from "../activity/Card";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-<<<<<<< HEAD
     `http://localhost:3000/api/activitys?page=${page}&cat=${cat || ""}`,
-=======
-    `https://ugahsa.vercel.app/api/activitys?page=${page}&cat=${
-      cat || ""
-    }`,
->>>>>>> aee713905658f23fb73ed9e42992693f6a6086d8
     {
       cache: "no-store",
     }
