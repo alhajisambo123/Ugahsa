@@ -1,8 +1,26 @@
 // pages/aboutPage.js
 import styles from "./aboutPage.module.css";
 import Menu from "@/components/Menu/Menu";
-
+import Image from "next/image";
 const AboutPage = () => {
+  const executives = [
+    {
+      name: "John Doe",
+      image: "/images/john_doe.jpg",
+      bio: "Brief biography of John Doe",
+    },
+    {
+      name: "John Doe",
+      image: "/images/john_doe.jpg",
+      bio: "Brief biography of John Doe",
+    },
+    {
+      name: "John Doe",
+      image: "/images/john_doe.jpg",
+      bio: "Brief biography of John Doe",
+    },
+    // ... other executives
+  ];
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>About UGAHSA</h1>
@@ -84,6 +102,27 @@ const AboutPage = () => {
           </p>
         </div>
         <Menu />
+      </div>
+
+      <div className={styles.executiveSection}>
+        <h2 className={styles.title}>Meet the Executives</h2>
+        <div className={styles.executiveList}>
+          {executives.map((executive) => (
+            <div key={executive.name} className={styles.executive}>
+              <Image
+                src="/(1).jpeg"
+                alt={executive.name}
+                width={100}
+                height={100}
+                className={styles.executiveImage}
+              />
+              {/* <Image src="/(1).jpeg" alt="" fill className={styles.image} /> */}
+
+              <h3 className={styles.executiveName}>{executive.name}</h3>
+              <p className={styles.executiveBio}>{executive.bio}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

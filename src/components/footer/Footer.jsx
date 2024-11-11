@@ -31,7 +31,7 @@ const Footer = () => {
             <Image src="/facebook.png" alt="Facebook" width={50} height={50} />
           </Link>
           <Link
-            href="https://web.facebook.com/ugahsa"
+            href="https://www.instagram.com/ugahsa_official"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +46,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.tiktok.com/@ugahsa_live?is_from_webapp=1&sender_device=pc"
+            href="https://x.com/ugahsa_official"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,23 +58,23 @@ const Footer = () => {
         <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
           <Link href="/">Homepage</Link>
-          <Link href="/">Blog</Link>
+          {/* <Link href="/">Blog</Link> */}
           <Link href="/about">About</Link>
-          {/* <Link href="/">Contact</Link> */}
+          <Link href="/activities">Activities</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Departments</span>
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=OT">OT</Link>
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Physio">Physio</Link>
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Diet">Diet</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=OT">OT</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=Physio">Physio</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=Diet">Diet</Link>
         </div>
         <div className={styles.list}>
           {/* <span className={styles.listTitle}>Social</span> */}
           {/* <Link href="/">Facebook</Link>
           <Link href="/">Instagram</Link> */}
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=RT">RT</Link>
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=MedLab">MedLab</Link>
-          <Link href="https://blog-one-blue-53.vercel.app/blog?cat=Radio">Radio</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=RT">RT</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=MedLab">MedLab</Link>
+          <Link href="https://ugahsa.vercel.app/blog?cat=Radio">Radio</Link>
 
           {/* <Link href="/">Tiktok</Link> */}
         </div>

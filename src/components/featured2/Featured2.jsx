@@ -1,21 +1,17 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 import Link from "next/link";
-Link;
 
 const Featured = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    "/(1).jpeg",
-
-    "/swearing.jpeg",
-    "/president.jpeg",
-    "/preandvice.jpeg",
-    "/executives.jpeg",
-    "/swearing2.jpeg",
+    "/games1.jpeg",
+    "/games2.jpeg",
+    "/games3.jpeg",
+    "/games4.jpeg",
+    "/games5.jpeg",
     "/games6.jpeg",
     "/games7.jpeg",
     "/games8.jpeg",
@@ -45,10 +41,11 @@ const Featured = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Welcome to UGAHSA! </b> Empowering the Future of Allied Health
+        <b>Welcome to UGAHSA!</b> Empowering the Future of Allied Health
         Professionals
       </h1>
       <div className={styles.post}>
@@ -80,7 +77,6 @@ const Featured = () => {
             alumnus, or prospective member, this space is designed to inform,
             inspire, and connect us all.
           </p>
-
           <Link href={`/about`} className={styles.link}>
             Read More
           </Link>
