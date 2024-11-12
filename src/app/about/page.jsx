@@ -16,7 +16,7 @@ const AboutPage = () => {
     },
     {
       name: "John Doe",
-      image: "/images/john_doe.jpg",
+      image: "/(1).jpeg",
       bio: "Brief biography of John Doe",
     },
     // ... other executives
@@ -110,7 +110,7 @@ const AboutPage = () => {
           {executives.map((executive) => (
             <div key={executive.name} className={styles.executive}>
               <Image
-                src="/(1).jpeg"
+                src="preandvice.jpeg"
                 alt={executive.name}
                 width={100}
                 height={100}
