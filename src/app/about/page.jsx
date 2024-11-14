@@ -29,16 +29,16 @@ const AboutPage = () => {
     {
       id: 4,
 
-      name: "John Doe",
+      name: "AYIDZOE ELLIS KELVIN",
       image: "/hf (1).jpeg",
-      bio: "Brief biography of John Doe",
+      bio: "HEALTH OFFICER",
     },
     {
       id: 5,
 
-      name: "John Doe",
+      name: "AMPAH FRANKLIN GOLDSWORTH",
       image: "/hf (3).jpeg",
-      bio: "Brief biography of John Doe",
+      bio: "ORGANIZING SECRETARY",
     },
 
     {
@@ -58,7 +58,7 @@ const AboutPage = () => {
     {
       id: 8,
 
-      name: "KELVIN ELLIS AYIDZOE",
+      name: "RAMSEY S. WOANYA",
       image: "/hf (4).jpeg",
       bio: "HEALTH OFFICER",
     },
