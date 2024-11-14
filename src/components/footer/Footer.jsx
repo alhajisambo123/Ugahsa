@@ -30,12 +30,27 @@ const Footer = () => {
           >
             <Image src="/facebook.png" alt="Facebook" width={50} height={50} />
           </Link>
+
+          <Link
+            href="https://x.com/ugahsa_official"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/ximage.avif" alt="Facebook" width={50} height={50} />
+          </Link>
           <Link
             href="https://www.instagram.com/ugahsa_official"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image src="/instagram.png" alt="" width={50} height={50} />
+          </Link>
+          <Link
+            href="https://web.facebook.com/ugahsa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/nap.avif" alt="Facebook" width={60} height={60} />
           </Link>
           <Link
             href="https://www.youtube.com/@ugahsaofficial281"
@@ -46,7 +61,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://x.com/ugahsa_official"
+            href="https://www.tiktok.com/@ugahsa_live"
             target="_blank"
             rel="noopener noreferrer"
           >
