@@ -5,21 +5,63 @@ import Image from "next/image";
 const AboutPage = () => {
   const executives = [
     {
+      id: 1,
+
+      name: "MR. PHAROUK UMAR Umar",
+      image: "/pre.jpeg",
+      bio: "PRESIDENT",
+    },
+
+    {
+      id: 3,
+
+      name: "GERALD N.K. QUARTEY",
+      image: "/vice.jpeg",
+      bio: "VICE PRESIDENT",
+    },
+    {
+      id: 2,
+
+      name: "ERNEST K.A. BOATENG",
+      image: "/fi.jpeg",
+      bio: "FINANCIAL SECRETARY",
+    },
+    {
+      id: 4,
+
       name: "John Doe",
-      image: "/images/john_doe.jpg",
+      image: "/hf (1).jpeg",
       bio: "Brief biography of John Doe",
     },
     {
+      id: 5,
+
       name: "John Doe",
-      image: "/images/john_doe.jpg",
+      image: "/hf (3).jpeg",
       bio: "Brief biography of John Doe",
+    },
+
+    {
+      id: 6,
+
+      name: "YAKUBU LYDIA",
+      image: "/woc.jpeg",
+      bio: "WOMEN'S COMMISSIONER",
     },
     {
-      name: "John Doe",
-      image: "/(1).jpeg",
-      bio: "Brief biography of John Doe",
+      id: 7,
+
+      name: "BARBARA ADJEIWAH BOATENG",
+      image: "/gen.jpeg",
+      bio: "GENERAL SECRETARY",
     },
-    // ... other executives
+    {
+      id: 8,
+
+      name: "KELVIN ELLIS AYIDZOE",
+      image: "/hf (4).jpeg",
+      bio: "HEALTH OFFICER",
+    },
   ];
   return (
     <div className={styles.container}>
@@ -105,18 +147,17 @@ const AboutPage = () => {
       </div>
 
       <div className={styles.executiveSection}>
-        <h2 className={styles.title}>Meet the Executives</h2>
+        <h2 className={styles.title}>Meet the 2024 / 2025 Executives</h2>
         <div className={styles.executiveList}>
           {executives.map((executive) => (
-            <div key={executive.name} className={styles.executive}>
+            <div key={executive.id} className={styles.executive}>
               <Image
-                src="preandvice.jpeg"
-                alt={executive.name}
-                width={100}
-                height={100}
-                className={styles.executiveImage}
+                src={executive.image}
+                alt={`${executive.name} - UGAHSA Executive`} // Descriptive alt text
+                className={styles.image}
+                width={250} // Set explicit width
+                height={250} // Set explicit height
               />
-              {/* <Image src="/(1).jpeg" alt="" fill className={styles.image} /> */}
 
               <h3 className={styles.executiveName}>{executive.name}</h3>
               <p className={styles.executiveBio}>{executive.bio}</p>

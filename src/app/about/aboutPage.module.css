@@ -54,10 +54,9 @@
 }
 
 /* aboutPage.module.css */
-.executiveSection {
+/* .executiveSection {
   flex: 1;
   width: 100%;
-  background-color: #e63946;
 }
 
 .executiveList {
@@ -73,6 +72,11 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} */
 
 /* {
   border-radius: 50%;
@@ -90,4 +94,48 @@
 
 .executiveBio {
   font-size: 0.9em;
+}
+
+.executiveSection {
+  padding: 20px;
+}
+
+.executiveList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.executive {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.executiveImage {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%; /* Make the image circular */
+  margin: 0 auto 10px; /* Center the image within the card */
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.executiveName {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.executiveBio {
+  font-size: 0.9em;
+  color: #333;
+  padding: 0 10px;
+  font-weight: bold;
 }
