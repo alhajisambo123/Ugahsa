@@ -77,14 +77,14 @@ const MenuPosts = ({ withImage }) => {
           </div>
         </div>
       </Link>
-      <Link href="/blog?cat=Physio" className={styles.item}>
+      <Link href="/blog?cat=RT" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
             <Image src="/p1.jpeg" alt="" fill className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.food}`}>Physio</span>
+          <span className={`${styles.category} ${styles.food}`}>RT</span>
           <h3 className={styles.postTitle}>
             Access the latest in physiotherapy practices and advancements.
           </h3>
